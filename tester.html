@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>StudySesh</title>
+    <link rel="stylesheet" href="master-files/css/style.css">
+    <script src="master-files/js/index.js" defer></script> <!-- Added 'defer' for better performance -->
+    <link rel="icon" type="image/png" href="master-files/images/sslogo.png">
+</head>
+
+<!-- The code in this document was taken from w3schools and modified towards the style of the website. -->
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <img src="master-files/images/studyseshlogo.png" alt="logo" class="nav-logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="studytechniques.html">Study Techniques</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="nav-button" a href="takeabreak.html">Take a Break!</button>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro-container">
+            <div class="intro-text">
+                <h1>Choose a Study Technique.</h1>
+                <h2>Explore our selection of techniques!</h2>
+                <a href="#features" class="cta-button"><strong>Lets Go!</strong></a>
+            </div>
+            <!---- This image was created by Hasan As ari on Vectezzy.com --->
+            <img src="master-files/images/vecteezy_men-set-an-alarm-to-remember-to-always-study_4474412-1.png" 
+                 alt="Tired man working at laptop">
+        </div>
+    </section>
+    <div class="header-curve"></div>
+
+
+    <!-- Study Techniques Grid -->
+         <!-- The information in this grid was taken from https://e-student.org/best-study-methods/-->
+    <div class="feature-container" section id="features">
+            <div class="feature">
+                <a href="#pomodoro"><h2>Pomodoro Technique</h2></a>
+                <p>Work for 25 minutes, then take a 5-minute break to maintain focus and productivity.</p>
+                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
+                    <div class="collapse-content">
+                        <ul>
+                            <li>Task Completion</li>
+                            <li>Time Management</li>
+                            <li>Reducing Procrastination</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="feature">
+                <a href="#active-recall"><h2>Active Recall</h2></a>
+                <p>Test yourself frequently to enhance retention and understanding.</p>
+                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
+                <div class="collapse-content">
+                    <ul>
+                        <li>Memorization</li>
+                        <li>Long-term Learning</li>
+                        <li>Exam Preparation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature">
+                <a href="#sq3r"><h2>SQ3R</h2></a>
+                <p>A reading comprehension method involving Survey, Question, Read, Recite, and Review.</p>
+                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
+                <div class="collapse-content">
+                    <ul>
+                        <li>Reading-heavy subjects (e.g., History, Literature, Research Articles)</li>
+                        <li>Long-Term Information Retention</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature">
+                <a href="#spaced-repetition"><h2>Spaced Repetition</h2></a>
+                <p>Review information at increasing intervals to improve long-term retention.</p>
+                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
+                <div class="collapse-content">
+                    <ul>
+                        <li>Learning concepts over weeks or months</li>
+                        <li>Long-term retention</li>
+                        <li>Prevents cramming</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature">
+                <a href="#feynman"><h2>Feynman Technique</h2></a>
+                <p>Explain concepts in simple terms to solidify understanding.</p>
+                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
+                <div class="collapse-content">
+                    <ul>
+                        <li>Mastering complex topics</li>
+                        <li>Long-term retention</li>
+                        <li>Prevents cramming</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature">
+                <a href="#leitner"><h2>Leitner Technique</h2></a>
+                <p>Use flashcards to reinforce learning through repetition and active recall.</p>
+                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
+                <div class="collapse-content">
+                    <ul>
+                        <li>Vocabulary</li>
+                        <li>Formulas</li>
+                        <li>Factual recall (e.g., language learning, medical terms)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+<!-- Pomodoro Technique Section -->
+
+     <section id="pomodoro" class="pomodoro-section">
+            <div class="content">
+                <h2 class="section-title">The Pomodoro Technique</h2>
+                <h3>
+                    The <strong>Pomodoro Technique</strong> is a <u>time management method</u> that uses 
+                    <strong>25-minute work sessions</strong> followed by <u>short breaks</u> to improve 
+                    <strong>focus</strong> and <strong>productivity</strong>.
+                </h3>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3><span class="highlight4">BENEFITS</span></h3>
+                        <ul>
+                            <li>Enhances focus and concentration</li>
+                            <li>Reduces procrastination</li>
+                            <li>Encourages time-awareness</li>
+                            <li>Prevents burnout with regular breaks</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <h3><span class="highlight5">DRAWBACKS</span></h3>
+                        <ul>
+                            <li>May disrupt deep work sessions</li>
+                            <li>Not ideal for tasks requiring prolonged focus</li>
+                            <li>Frequent breaks may feel restrictive</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="infographic-container">
+                <div class="grid-item">
+                 <img src="master-files/images/pomotech.png" alt="Pomodoro Technique Infographic">
+                </div>
+            </div>
+
+
+                
+
+                <div class="pomotools">
+                    <h2>Useful Tools</h2>
+                    <div class="tools-container">
+                        <div class="tool">
+                            <h3><a href="https://tomato-timer.com/" target="_blank">Tomato Timer</a></h3>
+                        </div>
+                        <div class="tool">
+                            <h3><a href="https://www.forestapp.cc/" target="_blank">Forest: Stay Focused</a></h3>
+                        </div>
+                        <div class="tool">
+                            <h3><a href="https://pomofocus.io/" target="_blank">Pomofocus</a></h3>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+ 
+
+
+
+        <!-- Active Recall Section -->
+        
+                <section id="active-recall" class="activer-section">
+                    <div class="content">
+                        <h2 class="section-title">Active Recall</h2>
+                        <h3><u>Active Recall</u> is a study technique involving <u>actively recalling information</u> by testing yourself repeatedly.</h3>
+                        <h3>Through <u>flashcards</u>, <u>self-generated questions</u> and <u>practice tests</u>, this study method helps your brain <u>memorize</u>, <u>retain</u> and <u>retrieve information</u> more efficiently.</h3>
+                        
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <h3><span class="highlight4">BENEFITS</span></h3>
+                                <ul>
+                                    <li>Enhances cognitive aspects of learning</li>
+                                    <li>Improves long-term Memory Retention</li>
+                                    <li>Promotes efficient learning and focused attention</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <h3><span class="highlight5">DRAWBACKS</span></h3>
+                                <ul>
+                                    <li>It can be time-consuming to create study materials</li>
+                                    <li>It is possible to anticipate questions and answers, mimicking passive learning.</li>
+                                    <li>Risk of studying facts in isolation without understanding their interconnections.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!---the information in this section was taken from https://subjectguides.york.ac.uk/study-revision/active-recall#s-lg-box-16277498 --->
+                        <div class="text-container">
+                            <h3 class="section-title">HOW IT WORKS</h3>
+                            <p>There are many different strategies of doing active recall. Select a method below:</p>
+                        
+                            <div class="grid-container">
+                                <div class="grid-card">
+                                    <div class="text-content">
+                                        <h3>FLASHCARDS</h3>
+                                        <h4>Use flashcards with questions on one side and answers on the other to practice memory recall.</h4>
+                                    </div>
+                                    <div class="image-content">
+                                        <img src="master-files/images/flashcards.png" alt="Flashcards" />
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>BENEFITS</h3>
+                                        <ul>
+                                            <li>Memorizing terms, concepts and short information.</li>
+                                            <li>Writing your own flashcards can boost understanding and retention.</li>
+                                            <li>Versatile and can be used for various subjects.</li>
+                                            <li>Convenient for studying anywhere, anytime.</li>
+                                        </ul>
+                                    </div>
+                                    <h3>TOOLS</h3>
+                                    <div class="text-grid">
+                                        <a href="https://quizlet.com/gb">Quizlet</a>
+                                        <a href="https://apps.ankiweb.net/">Anki</a>
+                                    </div>
+                                </div>
+                                <div class="grid-card">
+                                    <h3>PRACTICE TESTING</h3>
+                                    <h4>Testing youself using past papers and mock exams is an excellent form of active recall.</h4>
+                                <div class="text-content">
+                                    <h3>BENEFITS</h3>
+                                        <ul>
+                                            <li>Enhances exam preparedness</li>
+                                            <li>Improved information memorisation, retnetion, and comprehension.</li>
+                                        </ul>
+                                    </div>
+                                    <h3>HOW TO</h3>
+                                    <p>Search for Past Papers from your institution or online. Below are a few places to look for general subjects.</p>
+                                    <h3>TOOLS</h3>
+                                    <div class="text-grid">
+                                        <a href="https://www.york.ac.uk/library/resources/collections/exams/">Univeristy of York: Past Papers</a>
+                                        <a href="https://qualifications.pearson.com/en/support/support-topics/exams/past-papers.html">Pearson</a>
+                                        <a href="https://revisionworld.com/gcse-revision/gcse-exam-past-papers">Revision World</a>
+                                    </div>
+                                </div>
+                                <div class="grid-card">
+                                    <h3>SELF TESTING</h3>
+                                    <h4>Creating your own questions to test yourself is a great way to remember material, and to prepare for potential exam questions.</h4>
+                                <div class="text-content">
+                                    <h3>BENEFITS</h3>
+                                        <ul>
+                                            <li>Enhances exam preparedness</li>
+                                            <li>Improved information memorisation, retnetion, and comprehension.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid-card">
+                                    <h3>STUDY WITH OTHERS</h3>
+                                    <h4>Working with others is a great way to casually engage in active recall.</h4>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        
+                        
+                        
+        
+                        <div class="activetools">
+                            <h2>Useful Tools</h2>
+                            <div class="tools-container">
+                                <div class="tool">
+                                    <h3><a href="https://tomato-timer.com/" target="_blank">Quizlet</a></h3>
+                                </div>
+                                <div class="tool">
+                                    <h3><a href="https://pomofocus.io/" target="_blank">Anki</a></h3>
+                                </div>
+                                <div class="tool">
+                                    <h3>one more feature</h3>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+                <div class="divider"></div>
+  
+
+    <!-- SQ3R Section -->
+
+    <section id="SQ3R" class="sq3r-section">
+        <div class="content">
+            <h2 class="section-title">SQ3R</h2>
+            <p class="description">The Pomodoro Technique is a time management method that uses 25-minute work sessions followed by short breaks to improve focus and productivity.</p>
+            
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>Enhances focus and concentration</li>
+                        <li>Reduces procrastination</li>
+                        <li>Encourages time-awareness</li>
+                        <li>Prevents burnout with regular breaks</li>
+                    </ul>
+                </div>
+                
+                <div class="grid-item">
+                    <h3>Drawbacks</h3>
+                    <ul>
+                        <li>May disrupt deep work sessions</li>
+                        <li>Not ideal for tasks requiring prolonged focus</li>
+                        <li>Frequent breaks may feel restrictive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="infographic-container">
+                <div class="infographic">
+                    <h3 class="section-title">HOW IT WORKS</h3> 
+                    <img src="master-files/images/pomotech.png" alt="Pomodoro Technique Infographic">
+                </div>
+            </div>
+            
+
+            <div class="pomotools">
+                <h2>Useful Tools</h2>
+                <div class="tools-container">
+                    <div class="tool">
+                        <h3><a href="https://tomato-timer.com/" target="_blank">Tomato Timer</a></h3>
+                    </div>
+                    <div class="tool">
+                        <h3><a href="https://www.forestapp.cc/" target="_blank">Forest: Stay Focused</a></h3>
+                    </div>
+                    <div class="tool">
+                        <h3><a href="https://pomofocus.io/" target="_blank">Pomofocus</a></h3>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <p>&copy; 2025 StudySesh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
