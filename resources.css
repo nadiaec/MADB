@@ -1,0 +1,475 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FBEAE7;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #c7e0e5;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Centers the nav */
+    align-items: center;
+    position: relative;
+    z-index: 10; /* Ensures header stays on top */
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items across */
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.nav-logo {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Main navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 10;
+    background-color: #FBEAE7;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    min-height: 60px;
+    width: 100%;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+/* Navigation items */
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap; /* Prevent items from breaking awkwardly */
+}
+
+/* Active/Home button */
+nav ul li:nth-child(4) {
+    background-color: #ffcc00;
+    color: white;
+}
+
+/* Default hover effect */
+nav ul li:hover {
+    background-color: #c7e0e5;
+    transform: scale(1.1);
+}
+
+/* Styling for links */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* "Take a Break" button */
+.nav-button {
+    height: 60px;
+    padding: 0 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #FBEAE7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 6px 6px 0px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* Button hover effect */
+.nav-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.nav-button a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ===== MOBILE MENU STYLES ===== */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FBEAE7;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure items wrap inside the mobile menu */
+.mobile-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Show the mobile menu when active */
+.mobile-menu.active {
+    display: flex;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 5px;
+}
+
+/* Responsive Design: Show Hamburger Menu on Small Screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide desktop menu */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Ensure mobile menu items wrap properly */
+    .mobile-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Intro Section */
+.intro {
+    position: relative;
+    background-color: #c7e0e5;
+    padding: 50px 20px;
+    margin-top: -20px; /* Ensures no space between nav and intro */
+    display: flex;
+    justify-content: center; /* Centers the content */
+    align-items: center;
+}
+
+/* Container for text and image */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust width as needed to maintain balance */
+    max-width: 1200px; /* Optional: Set max width for large screens */
+}
+
+/* Text section */
+.intro-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 2px; /* Optional: Space between text and image */
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Image section */
+.intro img {
+    max-width: 40%; /* Adjust as needed */
+    height: auto;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 50px;
+    }
+
+    .intro-text {
+        text-align: center; 
+        padding-right: 0; 
+    }
+
+    .intro-text h1 {
+        font-size: 2rem; 
+    }
+
+    .intro img {
+        display: none;
+    }
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px; 
+    text-align: center;
+    border: 2px solid black; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    background-color: #003d80; 
+    transform: scale(0.98);
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Highlighted Text */
+.intro-text .highlight1 {
+    background: #e01761;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: #000;
+    display: inline-block;
+    transform: rotate(-5deg);
+    box-shadow: 6px 6px 10px black;
+}
+
+.intro-text .highlight2 {
+    background: #d1e903;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: #5171ff;
+    display: inline-block;
+    transform: rotate(5deg);
+    box-shadow: 6px 6px 10px black;
+}
+
+.intro-text .highlight3 {
+    background: #e01761;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: #d1e903;
+    display: inline-block;
+    transform: rotate(-2deg);
+    box-shadow: 6px 6px 10px black;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.header-curve {
+    position: relative;
+    width: 100%;
+    height: 80px; /* Increase height for a deeper curve */
+    background-color: #c7e0e5;
+    border-radius: 0 0 100% 100%; /* More exaggerated curve */
+    margin-top: -5px; /* Fine-tune to eliminate any visible gap */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto; /* Adds space above */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content inside */
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    margin: 10px;
+    color: #000000;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px #000;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: transform 0.3s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+    transform: translateY(-5px);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #FBEAE7;
+  }
+
+
+  .collapsible:nth-of-type(1) { background-color: #85a4ff; }
+  .collapsible:nth-of-type(2) { background-color: #d8b6ff; }
+  .collapsible:nth-of-type(3) { background-color: #c1ebe1; }
+  .collapsible:nth-of-type(4) { background-color: #ffa2db; }
+  .collapsible:nth-of-type(5) { background-color: #ffd38c; }
+  .collapsible:nth-of-type(6) { background-color: #e1edf7; }
+  
+
+
+
+/* --------------------------------------------------------------------------------------- */
+  .styled-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.styled-table th {
+    background-color: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Footer Section */
+.footer {
+    background-color: #0c1544;
+    color: #FBEAE7;
+    width: 100%;
+    text-align: center; /* Centers the text inside the footer */
+    padding: 20px; /* Adds padding for better spacing */
+    position: relative;
+    bottom: 0;
+}
+
+/* This code was taken from w3schools */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ffcc00; /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px 10px;
+    }
+
+    .break-info h1 {
+        font-size: 2em;
+    }
+
+    .break-info p {
+        font-size: 1em;
+    }
+
+    #timer {
+        font-size: 1.5em;
+    }
+
+    .break-img {
+        width: 90%;
+    }
+}
