@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>StudySesh</title>
     <link rel="stylesheet" href="master-files/css/studytechniques.css">
-    <script src="master-files/js/new.js" defer></script> <!-- Added 'defer' for better performance -->
+    <script src="master-files/js/new.js" defer></script> 
     <link rel="icon" type="image/png" href="master-files/images/sslogo.png">
 </head>
 
 <!-- The code in this document was taken from w3schools and modified towards the style of the website. -->
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <!-- Navigation Bar -->
     <header>
         <div class="nav-container">
@@ -30,7 +30,6 @@
                         <li><a href="studytechniques.html">Study Techniques</a></li>
                         <li><a href="tools.html">Tools</a></li>
                         <li><a href="resources.html">Resources</a></li>
-                        <li><a href="about.html">Take a Break!</a></li>
                     </ul>
                 </div>
         
@@ -69,75 +68,84 @@
          <!-- The information in this grid was taken from https://e-student.org/best-study-methods/-->
     <div class="feature-container" section id="features">
             <div class="feature">
-                <a href="#pomodoro"><h2>Pomodoro Technique</h2></a>
-                <p>Work for 25 minutes, then take a 5-minute break to maintain focus and productivity.</p>
-                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
-                    <div class="collapse-content">
-                        <ul>
-                            <li>Task Completion</li>
-                            <li>Time Management</li>
-                            <li>Reducing Procrastination</li>
-                        </ul>
-                    </div>
+                <a href="#pomodoro"><h2>Pomodoro Technique</h2>
+                    <p>Work for 25 minutes, then take a 5-minute break to maintain focus and productivity.</p>
+                </a>
+                <details>
+                    <summary>Best for:</summary>
+                    <ul>
+                        <li>Task Completion</li>
+                        <li>Time Management</li>
+                        <li>Reducing Procrastination</li>
+                    </ul>
+                </details>
             </div>
             <div class="feature">
-                <a href="#active-recall"><h2>Active Recall</h2></a>
-                <p>Test yourself frequently to enhance retention and understanding.</p>
-                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
-                <div class="collapse-content">
+                <a href="#active-recall" class="feature-link">
+                    <div class="feature-content">
+                        <h2>Active Recall</h2>
+                        <p>Test yourself frequently to enhance retention and understanding.</p>
+                    </div>
+                </a>
+                <details>
+                    <summary>Best for:</summary>
                     <ul>
                         <li>Memorization</li>
                         <li>Long-term Learning</li>
                         <li>Exam Preparation</li>
                     </ul>
-                </div>
+                </details>
             </div>
             <div class="feature">
-                <a href="#sq3r"><h2>SQ3R</h2></a>
-                <p>A reading comprehension method involving Survey, Question, Read, Recite, and Review.</p>
-                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
-                <div class="collapse-content">
+                <a href="#sq3r"><h2>SQ3R</h2>
+                    <p>A reading comprehension method involving Survey, Question, Read, Recite, and Review.</p>
+                </a>
+                <details>
+                    <summary>Best for:</summary>
                     <ul>
                         <li>Reading-heavy subjects (e.g., History, Literature, Research Articles)</li>
                         <li>Long-Term Information Retention</li>
                     </ul>
-                </div>
+                </details>
             </div>
             <div class="feature">
-                <a href="#spaced"><h2>Spaced Repetition</h2></a>
-                <p>Review information at increasing intervals to improve long-term retention.</p>
-                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
-                <div class="collapse-content">
+                <a href="#spaced"><h2>Spaced Repetition</h2>
+                    <p>Review information at increasing intervals to improve long-term retention.</p>
+                </a>
+                <details>
+                    <summary>Best for:</summary>
                     <ul>
                         <li>Learning concepts over weeks or months</li>
                         <li>Long-term retention</li>
                         <li>Prevents cramming</li>
                     </ul>
-                </div>
+                </details>
             </div>
             <div class="feature">
-                <a href="#feynman"><h2>Feynman Technique</h2></a>
-                <p>Explain concepts in simple terms to solidify understanding.</p>
-                <button type="button" class="collapsible"><h3>Best for:    ▼</h3></button>
-                <div class="collapse-content">
+                <a href="#feynman"><h2>Feynman Technique</h2>
+                    <p>Explain concepts in simple terms to solidify understanding.</p>
+                </a>
+                <details>
+                    <summary>Best for:</summary>
                     <ul>
                         <li>Mastering complex topics</li>
                         <li>Long-term retention</li>
                         <li>Prevents cramming</li>
                     </ul>
-                </div>
+                </details>
             </div>
             <div class="feature">
-                <a href="#leitner"><h2>Leitner Technique</h2></a>
-                <p>Use flashcards to reinforce learning through repetition and active recall.</p>
-                <button type="button" class="collapsible"><h3>Best for:▼</span></h3></button>
-                <div class="collapse-content">
+                <a href="#leitner"><h2>Leitner Technique</h2>
+                    <p>Use flashcards to reinforce learning through repetition and active recall.</p>
+                </a>
+                <details>
+                    <summary>Best for:</summary>
                     <ul>
                         <li>Vocabulary</li>
                         <li>Formulas</li>
                         <li>Factual recall (e.g., language learning, medical terms)</li>
                     </ul>
-                </div>
+                </details>
             </div>
         </div>
     </section>
@@ -176,12 +184,10 @@
                     </div>
                 </div>
 
-            <div class="infographic-container">
-                <div class="grid-item2">
-                 <img src="master-files/images/pomotech.png" alt="Pomodoro Technique Infographic">
+                <div class="infographic-container">
+                    <img src="master-files/images/pomotech.png" alt="Pomodoro Technique Infographic">
                 </div>
-            </div>
-
+            
 
             <div class="pomotools">
                     <h2>Useful Tools</h2>
@@ -203,7 +209,7 @@
                 <h2>Learn more about the Pomodoro Technique</h2>
                 <div class="resource-container">
                     <div class="resource">
-                        <h3><a href="https://subjectguides.york.ac.uk/being-organised/procrastination" target="_blank">University of York</a></h3>
+                        <h3><a href="https://subjectguides.york.ac.uk/being-organised/procrastination" target="_blank">How to Avoid Procastination</a></h3>
                     </div>
                     <div class="resource">
                         <h3><a href="https://bpspsychub-onlinelibrary-wiley-com.ezproxy1.lib.gla.ac.uk/doi/full/10.1111/bjep.12593" target="_blank">Understanding effort regulation: Comparing ‘Pomodoro’ breaks and self-regulated breaks</a></h3>
@@ -256,10 +262,9 @@
 
                             <div class="grid-container2">
                                 <div class="grid-card">
-                                    <div class="text-content">
-                                        <button type="button" class="collapsible"><h3>FLASHCARDS    ▼</h3></button>
-                                        <div class="collapse-content">
-                                            <h4>Use flashcards with questions on one side and answers on the other to practice memory recall.</h4>
+                                    <details>
+                                        <summary>FLASHCARDS</summary>
+                                        <h4>Use flashcards with questions on one side and answers on the other to practice memory recall.</h4>
                                     
                                             <div class="image-content">
                                                 <img src="master-files/images/flashcards.png" alt="Flashcards" />
@@ -279,11 +284,11 @@
                                                 <a href="https://apps.ankiweb.net/">Anki</a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </details>
                                 </div>
                                 <div class="grid-card">
-                                    <button type="button" class="collapsible"><h3>PRACTICE TESTING    ▼</h3></button>
-                                    <div class="collapse-content">
+                                    <details>
+                                        <summary>PRACTICE TESTING</summary>
                                         <h4>Testing youself using past papers and mock exams is an excellent form of active recall.</h4>
                                         <div class="text-content">
                                             <h3>BENEFITS</h3>
@@ -300,14 +305,14 @@
                                                 <a href="https://qualifications.pearson.com/en/support/support-topics/exams/past-papers.html">Pearson</a>
                                                 <a href="https://revisionworld.com/gcse-revision/gcse-exam-past-papers">Revision World</a>
                                             </div>
-                                    </div>
+                                    </details>
                                 </div>
 
 
                                 <div class="grid-card">
-                                    <button type="button" class="collapsible"><h3>SELF TESTING    ▼</h3></button>
-                                    <div class="collapse-content">
-                                            <h4>Creating your own questions to test yourself is a great way to remember material, and to prepare for potential exam questions.</h4>
+                                    <details>
+                                        <summary>SELF TESTING</summary>
+                                        <h4>Creating your own questions to test yourself is a great way to remember material, and to prepare for potential exam questions.</h4>
                                         <div class="text-content">
                                             <h3>BENEFITS</h3>
                                                 <ul>
@@ -315,11 +320,12 @@
                                                     <li>Improved information memorisation, retnetion, and comprehension.</li>
                                                 </ul>
                                             </div>
-                                    </div>
+                                    </details>
                                 </div>
+
                                 <div class="grid-card">
-                                    <button type="button" class="collapsible"><h3>STUDY WITH OTHERS    ▼</h3></button>
-                                    <div class="collapse-content">
+                                    <details>
+                                        <summary>STUDY WITH OTHERS</summary>
                                         <h4>Working with others is a great way to casually engage in active recall.</h4>
                                         <h3>HOW TO:</h3>
                                             <ol>
@@ -330,11 +336,9 @@
                                                     <li>Teach eachother the topics.</li>
                                                     <li>Explore the <a href="#feynman">Feynman Technique</a> if you like this method.</li>
                                             </ol>
-                                    </div>
+                                    </details>
                                 </div>
                             </div>
-                            
-
                         </div>
                         
                         
@@ -356,7 +360,7 @@
                             <h2>Learn more about Active Recall</h2>
                             <div class="resource-container">
                                 <div class="resource">
-                                    <h3><a href="https://subjectguides.york.ac.uk/study-revision/active-recall#s-lg-box-16277498" target="_blank">University of York</a></h3>
+                                    <h3><a href="https://subjectguides.york.ac.uk/study-revision/active-recall#s-lg-box-16277498" target="_blank">Active Recall</a></h3>
                                 </div>
                                 <div class="resource">
                                     <h3><a href="https://www-sciencedirect-com.ezproxy1.lib.gla.ac.uk/science/article/pii/S0165032724009571" target="_blank">Corrigendum to “Active recall strategies associated with academic achievement in young adults: A systematic review”</a></h3>
@@ -471,9 +475,7 @@
             </div>
 
             <div class="infographic-container">
-                <div class="grid-item2">
-                    <img src="master-files/images/spaced.png" alt="Spaced Practice Infographic">
-                </div>
+                <img src="master-files/images/spaced.png" alt="Spaced Repetition Inforgraphic">
             </div>
 
             <div class="pomotools">
@@ -495,7 +497,7 @@
                     <h3><a href="https://www.learningscientists.org/blog/2016/7/21-1" target="_blank">The Learning Scientists</a></h3>
                 </div>
                 <div class="resource">
-                    <h3><a href="https://subjectguides.york.ac.uk/study-revision/spaced-repetition?audience=staff" target="_blank">University of York</a></h3>
+                    <h3><a href="https://subjectguides.york.ac.uk/study-revision/spaced-repetition?audience=staff" target="_blank">Spaced Repetition</a></h3>
                 </div>
                 <div class="resource">
                     <h3><a href="https://link-springer-com.ezproxy2.lib.gla.ac.uk/article/10.1007/s10648-015-9349-8" target="_blank">Spaced Retrieval Practice Increases College Students’ Short- and Long-Term Retention</a></h3>
@@ -535,9 +537,7 @@
             </div>
 
             <div class="infographic-container">
-                <div class="grid-item2">
-                    <img src="master-files/images/feynman.png" alt="Spaced Practice Infographic">
-                </div>
+                <img src="master-files/images/feynman.png" alt="Feynman technique Infographic">
             </div>
 
             <div class="pomotools">
@@ -601,9 +601,7 @@
 
 
             <div class="infographic-container">
-                <div class="grid-item2">
                     <img src="master-files/images/leitner.png" alt="Leitner Technique Infographic">
-                </div>
             </div>
 
             <div class="container">
@@ -641,7 +639,7 @@
                     <h3><a href="#spaced" target="_blank">Spaced Repetition</a></h3>
                 </div>
                 <div class="resource">
-                    <h3><a href="https://subjectguides.york.ac.uk/study-revision/leitner-system" target="_blank">University of York</a></h3>
+                    <h3><a href="https://subjectguides.york.ac.uk/study-revision/leitner-system" target="_blank">The Leitner System</a></h3>
                 </div>
                 <div class="resource">
                     <h3><a href="https://www.goodnotes.com/blog/leitner-system" target="_blank">goodnotes</a></h3>
@@ -654,10 +652,10 @@
     <div class="divider"></div>
 
     <!-- Footer Section -->
-
-    <footer>
-        <p>&copy; 2025 StudySesh. All rights reserved.</p>
+    <footer class="footer">
+        <p>2025 StudySesh. <a href="references.html">Contact Us / References</a></p>
     </footer>
 
 </body>
 </html>
+
