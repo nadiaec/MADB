@@ -11,10 +11,30 @@
     <script src="https://kit.fontawesome.com/bb507ba91e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+<!-- Navigation Bar -->
+     <header>
         <div class="nav-container">
             <nav>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+        
+                <!-- Mobile Menu -->
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="studytechniques.html">Study Techniques</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Logo -->
                 <img src="master-files/images/studyseshlogo.png" alt="logo" class="nav-logo">
+        
+                <!-- Desktop Menu -->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="studytechniques.html">Study Techniques</a></li>
@@ -23,16 +43,17 @@
                 </ul>
             </nav>
         </div>
-        <button class="nav-button"><a href="takeabreak.html">Take a Break!</a></button>
+        <button class="nav-button"><a href=takeabreak.html>Take a Break!</a></button>
+        
     </header>
 
     <section class="intro">
         <div class="intro-container">
             <div class="intro-text">
-                <h1>Are you feeling <span class="highlight2">STRESSED</span> ?</h1>
-                <h1>Does the thought of STUDYING make you want to <span class="highlight3">SCREAM</span> ?</h1>
+                <h1>Are you feeling <u>STRESSED</u>?</h1>
+                <h1>Does the thought of <span class="highlight2">studying</span> make you want to <span class="highlight3">SCREAM</span> ?</h1>
                 <h2>Then this website is the place for you!</h2>
-                <a href="studytechniques.html" class="cta-button"><strong>Lets Go!</strong></a>
+                <a href="studytechniques.html" class="cta-button"><strong>Step 1: Study Techniques</strong></a>
             </div>
         
     
@@ -55,42 +76,46 @@
     <div class="features">
         <h2>How it Works</h2>
         <div class="feature-container">
-                <div class="feature">
-                    <a href="studytechniques.html">
-                        <i class="fa-solid fa-book-open-reader"></i>
-                        <h3>Study Techniques</h3>
-                        <p>Choose from our range of featured study techniques based on your needs.</p>
-                    </a>
-                </div>
-                <div class="feature">
-                    <a href="tools.html">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <h3>Tools</h3>
-                        <p>Explore our tools such as study timers, audios, and videos to enhance your StudySesh!</p>
-                    </a>
-                </div>
-                <div class="feature">
-                    <a href="resources.html">
-                        <i class="fas fa-cogs"></i>
-                        <h3>Resources</h3>
-                        <p>Explore our resources page for more information on study methods, techniques, exercises, games, and more!</p>
-                    </a>
-                </div>
-                <div class="feature">
-                    <a href="takeabreak.html">
-                        <i class="fa-solid fa-face-smile-wink"></i>
-                        <h3>Take A Break!</h3>
-                        <p>Step away from your work by playing our games or trying some exercises.</p>
-                    </a>
-                </div>
-            </a>
+            <div class="feature">
+                <h3 class="feature-title">Step 1</h3>
+                <a href="studytechniques.html">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h3>Study Techniques</h3>
+                    <p>Choose from our range of featured study techniques based on your needs.</p>
+                </a>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Step 2</h3>
+                <a href="tools.html">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Tools</h3>
+                    <p>Explore our tools such as study timers, audios, and videos to enhance your StudySesh!</p>
+                </a>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Step 3</h3>
+                <a href="resources.html">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Resources</h3>
+                    <p>Explore our resources page for more information on study methods, techniques, exercises, games, and more!</p>
+                </a>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Refresh!</h3>
+                <a href="takeabreak.html">
+                    <i class="fa-solid fa-face-smile-wink"></i>
+                    <h3>Take A Break!</h3>
+                    <p>Step away from your work by playing our games or trying some exercises.</p>
+                </a>
+            </div>
         </div>
     </div>
+    
     
     <div class="divider"></div>
     <!-- Footer Section -->
     <footer class="footer">
-        <p>&copy; 2025 StudySesh. All rights reserved.</p>
+        <p>2025 StudySesh. <a href="references.html">Contact Us / References</a></p>
     </footer>
 
         
