@@ -6,7 +6,6 @@ body {
     text-align: center;
 }
 
-/* Header Styles */
 header {
     background-color: #c7e0e5;
     padding: 15px;
@@ -22,7 +21,7 @@ header {
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spread items across */
+    justify-content: space-between;
     position: relative;
     flex-wrap: wrap;
 }
@@ -58,7 +57,7 @@ nav ul {
     margin: 0;
     display: flex;
     gap: 15px;
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    flex-wrap: wrap; 
 }
 
 /* Navigation items */
@@ -70,7 +69,7 @@ nav ul li {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    white-space: nowrap; /* Prevent items from breaking awkwardly */
+    white-space: nowrap; 
 }
 
 /* Active/Home button */
@@ -127,32 +126,51 @@ nav ul li a {
     gap: 10px;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #FBEAE7;
     border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    z-index: 999;
+    width: auto;
+    min-width: 200px;
+    max-width: 90vw;
+    white-space: nowrap; 
 }
 
-/* Ensure items wrap inside the mobile menu */
+
 .mobile-menu ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     margin: 0;
+    width: 100%;
+    list-style: none;
 }
 
 .mobile-menu ul li {
-    flex: 1 1 auto;
+    display: block;
+    width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: #FBEAE7;
+    border: 2px solid #000000;
+    transition: background-color 0.3s;
+    word-break: break-word;
 }
 
-/* Show the mobile menu when active */
+
+.mobile-menu ul li:hover {
+    background-color: #fcd7ce;
+}
+
 .mobile-menu.active {
     display: flex;
 }
@@ -166,6 +184,7 @@ nav ul li a {
     background: none;
     border: none;
     padding: 0;
+    z-index: 1000;
 }
 
 .hamburger div {
@@ -175,22 +194,32 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Responsive Design: Show Hamburger Menu on Small Screens */
+/* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
     nav ul {
-        display: none; /* Hide desktop menu */
+        display: none;
     }
 
     .hamburger {
         display: flex;
     }
 
-    /* Ensure mobile menu items wrap properly */
     .mobile-menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-menu ul li {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .nav-logo {
+        display: none;
     }
 }
+
 
 
 /* --------------------------------------------------------------------------------------- */
@@ -200,26 +229,25 @@ nav ul li a {
     position: relative;
     background-color: #c7e0e5;
     padding: 50px 20px;
-    margin-top: -20px; /* Ensures no space between nav and intro */
+    margin-top: -20px; 
     display: flex;
-    justify-content: center; /* Centers the content */
+    justify-content: center; 
     align-items: center;
 }
 
-/* Container for text and image */
 .intro-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Adjust width as needed to maintain balance */
-    max-width: 1200px; /* Optional: Set max width for large screens */
+    width: 80%; 
+    max-width: 1200px; 
 }
 
-/* Text section */
+
 .intro-text {
     flex: 1;
     text-align: left;
-    padding-right: 2px; /* Optional: Space between text and image */
+    padding-right: 2px; 
 }
 
 .intro-text h1 {
@@ -229,12 +257,12 @@ nav ul li a {
 
 /* Image section */
 .intro img {
-    max-width: 40%; /* Adjust as needed */
+    max-width: 40%; 
     height: auto;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0;
 }
 
-/* Responsive adjustments */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .intro-container {
         flex-direction: column; 
@@ -256,7 +284,7 @@ nav ul li a {
     }
 }
 
-/* Call-to-action button */
+/* LETS GO button */
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
@@ -364,15 +392,15 @@ nav ul li a {
 .header-curve {
     position: relative;
     width: 100%;
-    height: 80px; /* Increase height for a deeper curve */
+    height: 80px; 
     background-color: #c7e0e5;
-    border-radius: 0 0 100% 100%; /* More exaggerated curve */
-    margin-top: -5px; /* Fine-tune to eliminate any visible gap */
+    border-radius: 0 0 100% 100%; 
+    margin-top: -5px; 
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* Stack grid and textbox correctly */
+    flex-direction: column; 
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -399,8 +427,8 @@ nav ul li a {
 /* Feature Grid Container */
 .feature-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
     gap: 25px;
     justify-content: center;
     padding: 20px;
@@ -454,7 +482,7 @@ nav ul li a {
 .feature:nth-child(5) { background-color: #ffd38c; }
 .feature:nth-child(6) { background-color: #e1edf7; }
 
-/* Responsive Adjustments */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .feature-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -483,6 +511,12 @@ nav ul li a {
     font-size: 15px;
   }
   
+  details summary {
+    font-size: 1.2rem; /* or 1.5rem for even bigger */
+    font-weight: bold;
+    cursor: pointer; /* optional, makes it feel more interactive */
+}
+
 
   
   /* Style the collapsible content. Note: hidden by default */
@@ -572,9 +606,7 @@ nav ul li a {
     }
 }
 
-.grid-item:hover {
-    transform: translateY(-5px);
-}
+
 
 .grid-item img {
     width: 100%;
@@ -595,12 +627,9 @@ nav ul li a {
     align-items: center;
     text-align: left;
 
-    margin-bottom: 20px; /* Adds space below */
+    margin-bottom: 20px;
 }
 
-.grid-item2:hover {
-    transform: translateY(-5px);
-}
 
 .grid-item2 img {
     width: 100%;
@@ -615,6 +644,11 @@ nav ul li a {
     border-radius: 12px;
     box-shadow: 6px 6px 0px #000;
     transition: transform 0.3s;
+
+    min-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -628,7 +662,7 @@ nav ul li a {
 }
 
 .text-content {
-    flex: 1; /* Text takes available space */
+    flex: 1; 
 }
 
 .text-grid {
@@ -652,23 +686,16 @@ nav ul li a {
 }
 
 .image-content img {
-    width: 150px; /* Adjust size as needed */
+    width: 150px; 
     height: auto;
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    border-radius: 10px; 
 }
 
-/* Unique Colors for Each Feature */
-.grid-item:nth-child(1) { background-color: #c1ebe1; }
-.grid-item:nth-child(2) { background-color: #ffa2db; }
-.grid-item:nth-child(3) { background-color: #FBEAE7; }
-.grid-item:nth-child(4) { background-color: #ffa2db; }
-.grid-item:nth-child(5) { background-color: #ffd38c; }
-.grid-item:nth-child(6) { background-color: #e1edf7; }
 
 /* --------------------------------------------------------------------------------------- */
 
 .pomodoro-section {
-    background-color: #85a4ff; /* Replace with your exact purple shade */
+    background-color: #85a4ff; 
     color: #0c1544;
     padding: 50px 20px;
     position: relative;
@@ -676,7 +703,7 @@ nav ul li a {
 }
 
 .activer-section {
-    background-color: #d8b6ff; /* Replace with your exact purple shade */
+    background-color: #d8b6ff; 
     color: #0c1544;
     padding: 50px 20px;
     position: relative;
@@ -717,7 +744,7 @@ nav ul li a {
 
 .divider {
     position: relative;
-    height: 4px; /* Adjust based on navbar thickness */
+    height: 4px; 
     background-color: black;
     width: 100%;
     display: flex;
@@ -743,26 +770,31 @@ h3 {
 ul {
     list-style-type: none;
     padding: 0;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 ul li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 20px;
-    border: 2px solid #000000; /* Adjust color as needed */
 }
 
 .infographic-container {
+    max-width: 100%;
+    padding: 30px;
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    margin: 30px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    max-width: 60%;
+    box-sizing: border-box;
 }
+
+.infographic-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
 
 .text-container {
     display: flex;
@@ -818,14 +850,15 @@ a:hover {
 
 .tools-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .tool {
-    padding: 0 30px;
+    padding: 0 15px; 
     border: 2px solid black;
-    border-radius: 10px; /* Rounded shape */
+    border-radius: 10px; 
     cursor: pointer;
     background-color: #FBEAE7;
     font-weight: bold;
@@ -833,6 +866,8 @@ a:hover {
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 6px 6px 0px #000;
 }
+
+
 .tool:hover {
     transform: translateY(-10px);
 }
@@ -882,16 +917,16 @@ a:hover {
 
 .resource-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 20px; /* Keep spacing between items */
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
 }
 
 
 .resource {
     padding: 0 30px;
     border: 2px solid black;
-    border-radius: 10px; /* Rounded shape */
+    border-radius: 10px; 
     cursor: pointer;
     background-color: #FBEAE7;
     font-weight: bold;
@@ -900,20 +935,19 @@ a:hover {
     box-shadow: 6px 6px 0px #000;
 }
 
+.resource:hover {
+    transform: translateY(-5px);
+}
+
 /*------------------------------------------------------------------*/
-
-
-
-
 
 
 /* Footer Section */
 .footer {
-    background-color: #0c1544;
-    color: #FBEAE7;
+    color: #000;
     width: 100%;
-    text-align: center; /* Centers the text inside the footer */
-    padding: 20px; /* Adds padding for better spacing */
+    text-align: center; 
+    padding: 20px; 
     position: relative;
     bottom: 0;
 }
